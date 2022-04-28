@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    display: grid;
+    grid-template-rows: [row1-start] 25px [row1-end row2-start] 25px [row2-end];
+    grid-template-columns: auto 50px auto;
+    grid-template-areas: 
+      "header header header" 
+      "footer footer footer";   
+    row-gap: 5rem;
+}
+
+header{
+    background-color: black;
+    align-items: center;
+    color: crimson;
+    display: flex;
+    justify-content: space-between;
+    height: 5vw;
+    padding: 1rem;
+}
+
+header div p{
+    padding-top: 0.5rem;
+}
+
+nav{
+    display: flex;
+    gap: 5rem;
+}
+
+nav a{
+    font-size: small;
+    width:6rem;    
+    height: 2rem;
+    border: 1px solid;
+    border-radius: 16px;
+    text-align: center;
+    line-height: 2rem;
+}
+
+nav a:hover{
+    cursor: pointer;
+    background-color: rgba(220, 20, 60, 0.32);
+}
+
+h2{
+    color: crimson;
+    text-align: center;
+}
+
+.cuadrado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+}
+
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 50px;
+}
+
+.triangulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+}
